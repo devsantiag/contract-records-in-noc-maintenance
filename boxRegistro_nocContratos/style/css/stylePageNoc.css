@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 13pt;
+}
+
+.past-date {
+    color: red;
+}

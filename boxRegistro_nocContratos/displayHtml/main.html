@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOC - Contratos</title>
+
+    <!-- scripts -->
+    <script src="/scripts/contractRegistrations/contractRegistrationForm.js" defer></script>
+    <script src="/scripts/metric/metricActions.js" defer></script>
+
+    <!-- estilo -->
+    <link rel="stylesheet" href="/style/css/stylePageNoc.css">
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <h2>Registros</h2>
+        </header>
+        <form>
+            <input type="text" name="inputEmpresaNome" id="empresaNome">
+            <input type="text" name="inputEmpresaDesignador" id="empresaDesignador">
+            <input type="time" name="time" id="inputTime">
+            <input type="date" name="inputDate" id="inputDate">
+        </form>
+        <button onclick="register()">Registrar</button>
+
+        <!-- registros -->
+        <section>
+            <div class="postContainer">
+                <li id="listPosts">
+                    <ul id="post"></ul>
+                </li>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
