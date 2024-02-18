@@ -1,42 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOC - Contratos</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NOC - Contratos</title>
 
-    <!-- scripts -->
-    <script src="/scripts/contractRegistrations/contractRegistrationForm.js" defer></script>
-    <script src="/scripts/metric/metricActions.js" defer></script>
+        <!-- scripts -->
+        <script src="/scripts/contractRegistrations/contractRegistrationForm.js"
+            defer></script>
+        <script src="/scripts/metric/metricActions.js" defer></script>
 
-    <!-- estilo -->
-    <link rel="stylesheet" href="/style/css/stylePageNoc.css">
+        <!-- estilo -->
+        <link rel="stylesheet" href="/style/css/stylePageNoc.css">
 
-</head>
+    </head>
 
-<body>
-    <main>
-        <header>
-            <h2>Registros</h2>
-        </header>
-        <form>
-            <input type="text" name="inputEmpresaNome" id="empresaNome">
-            <input type="text" name="inputEmpresaDesignador" id="empresaDesignador">
-            <input type="time" name="time" id="inputTime">
-            <input type="date" name="inputDate" id="inputDate">
-        </form>
-        <button onclick="register()">Registrar</button>
+    <body>
+        <main>
+            <header>
+                <h2>Registros</h2>
+            </header>
+            <form>
+                <div class="formContainer">
+                    <input type="text" name="inputEmpresaNome" id="empresaNome"
+                        placeholder="Nome da Empresa">
+                    <input type="text" name="inputEmpresaDesignador"
+                        id="empresaDesignador"
+                        placeholder="Circuito do contrato">
+                    <input type="time" name="time" id="inputTime">
+                    <input type="date" name="inputDate" id="inputDate">
+                </div>
+            </form>
+            <button onclick="register()"
+                class="registerButton">Registrar</button>
 
-        <!-- registros -->
-        <section>
-            <div class="postContainer">
-                <li id="listPosts">
-                    <ul id="post"></ul>
-                </li>
-            </div>
-        </section>
-    </main>
-</body>
+            <!-- registros -->
+            <section>
+                <!-- certificar se todos os class e id encontram-se conectados com o javascript/css -->
+                <div class="postContainer">
+                    <div id="countContracts"">Contratos registrados 0</div>
+                    <!-- aplicar css no listPosts pois encontra-se sem nada -->
+                    <li class="listPosts">
+                        <!-- aplicar chave key={} para registro e identificação -->
+                        <ul id="post" onchange="realTime"></ul>
+                    </li>
+                </div>
+            </section>
+        </main>
+    </body>
 
 </html>

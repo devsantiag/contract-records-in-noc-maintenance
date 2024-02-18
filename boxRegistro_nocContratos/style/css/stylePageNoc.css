@@ -3,8 +3,20 @@
     margin: 0 auto;
     padding: 10px;
     font-size: 13pt;
+    list-style: none;
+}
+
+.formContainer {
+    display: flex;
+    padding: 0;
+}
+
+.post {
+    display: flex;
+    height: 40px;
 }
 
 .past-date {
-    color: red;
+    background-color: rgb(245, 0, 0);
+    color: white;
 }
