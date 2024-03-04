@@ -60,4 +60,4 @@ recordContracts = () => {
     countContracts.innerHTML = '';
     newElement.textContent = `Total de registros: ${contractCount}`;
     countContracts.appendChild(newElement);
-};
+};]
